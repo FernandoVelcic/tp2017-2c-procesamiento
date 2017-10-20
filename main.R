@@ -21,7 +21,7 @@ points(anios[paises=='CHINA'], escalas[paises=='CHINA'], pch='C')
 plot(anios[paises=='CHINA'], escalas[paises=='CHINA'], type = 'l', xlab="Anios", ylab="Escala", main = "China")
 
 # Cantidad de terremotos por año
-plot(data.frame(table(anios)), type='l', col='blue')
+plot(data.frame(table(anios)), type='l', col='blue', xlab="Anio", ylab="Cantidad", main='Terremotos por año')
 
 # Cantidad de terremotos por pais
 plot(data.frame(table(paises)), type='l', col='blue')
